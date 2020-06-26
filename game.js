@@ -10,7 +10,6 @@ startGame();
 function startGame() {
   $("#level-title").click(function() {
     if (!started) {
-      $("#level-title2").text("")
       gamePattern = [];
       $("#level-title").text("Level " + level);
       nextSequence();

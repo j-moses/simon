@@ -8,7 +8,7 @@ var highscore = 0;
 startGame();
 
 function startGame() {
-  $(document).keypress(function() {
+  $("#level-title").click(function() {
     if (!started) {
       $("#level-title2").text("")
       gamePattern = [];
@@ -80,8 +80,7 @@ function checkAnswer(currentLevel) {
   }
   else {
     playSound("wrong");
-    $("#level-title").text("Game Over");
-    $("#level-title2").text("Press Any Key To Start")
+    $("#level-title").text("Game Over - Click here to play again");
     level = 0;
     started = false;
     startGame();

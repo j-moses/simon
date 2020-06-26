@@ -80,7 +80,7 @@ function checkAnswer(currentLevel) {
   }
   else {
     playSound("wrong");
-    $("#level-title").text("Game Over - Click here to play again");
+    $("#level-title").text("Game Over - Click Here to Play Again");
     level = 0;
     started = false;
     startGame();
